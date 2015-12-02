@@ -6,3 +6,25 @@ body {
 
 }
 
+$border-color: color("materialize-red", "darken-3");
+.subb { display: inline-block; width:12%; margin: 2em; height: 200px; border: 1px solid $border-color; }
+
+.s1 {
+  @extend .z-depth-1;
+}
+
+.s2 {
+  @include z-depth-2();
+}
+
+.s3 {
+  @include z-depth-3();
+}
+
+.s4 {
+  @include z-depth-4();
+}
+
+.s5 {
+  @include z-depth-5();
+}

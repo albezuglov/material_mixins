@@ -1,8 +1,9 @@
 @import "../components/color";
 
-$primary-color: color('green','darken-3');
+$primary-color: color('blue-grey','lighten-5');
 @import "../components/variables";
 
 @import "../components/prefixer";
+@import "../components/global";
 
 
