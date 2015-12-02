@@ -12,7 +12,7 @@
   z-index: 999;
   overflow-y: auto;
 
-  @extend .z-depth-1;
+  @include z-depth-1();
   will-change: left;
 
   // Right Align
