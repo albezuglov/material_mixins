@@ -2,7 +2,7 @@
 @import "localcomp/utils";
 
 body {
-  @include color($bgcolor);
+  @include color($primary-color-dark);
 
 }
 
