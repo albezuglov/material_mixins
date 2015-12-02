@@ -1,0 +1,8 @@
+@import "localcomp/settings";
+@import "localcomp/utils";
+
+body {
+  @include color($bgcolor);
+
+}
+
