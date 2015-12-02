@@ -1,4 +1,4 @@
 @mixin color($base_color) {
   background-color: $base_color;
-  color: lighten($base_color, 10%);
+  color: lighten($base_color, 20%);
 }

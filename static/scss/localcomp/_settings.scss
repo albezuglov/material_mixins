@@ -1,1 +1,4 @@
-$bgcolor: #cc7523;
+@import "../components/color";
+
+
+$bgcolor: color('green','darken-4');
