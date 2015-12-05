@@ -7,24 +7,32 @@ body {
 }
 
 $border-color: color("materialize-red", "darken-3");
-.subb { display: inline-block; width:12%; margin: 2em; height: 200px; border: 1px solid $border-color; }
+.subb {
+  display: inline-block; width:12%; margin: 2em; height: 200px; border: 1px solid $border-color;
+  @extend %hoverable;
+}
 
 .s1 {
-  @include z-depth-1;
+  @extend %z-depth-1;
+  @extend %hoverable;
 }
 
 .s2 {
-  @include z-depth-2;
+  @extend %z-depth-2;
 }
 
 .s3 {
-  @include z-depth-3;
+  @extend %z-depth-3;
 }
 
 .s4 {
-  @include z-depth-4;
+  @extend %z-depth-4;
 }
 
 .s5 {
-  @include z-depth-5;
+  @extend %z-depth-5;
+}
+
+img.logo {
+  @extend img%responsive-img;
 }
