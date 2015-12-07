@@ -15,6 +15,7 @@ $border-color: color("materialize-red", "darken-3");
 
 .s2 {
   @include z-depth-2;
+  @extend %materialboxed;
 }
 
 .s3 {
