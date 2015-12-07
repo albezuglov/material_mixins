@@ -5,26 +5,97 @@ body {
   @include color($primary-color-dark);
 
 }
-$border-color: color("materialize-red", "darken-3");
-.subb { display: inline-block; width:12%; margin: 2em; height: 200px; border: 1px solid $border-color; }
 
-.s1 {
+$border-color: color("materialize-red", "darken-3");
+.subb { display: inline-block; width:12%; margin: 2em; height: 50px; border: 1px solid $border-color; }
+
+.grid_test {
+  @extend %container;
+  background-color: tomato;
+  border: 1px solid #eee;
+  color: white;
+  font-size: 18px;
+  line-height: 50px;
+  margin: 7px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.grid_test span {
+  @extend %flow-text;
+}
+
+.test1, .test2, .test3 {
+  @extend %row;
+}
+
+.col_full_width {
+  @extend %col;
+  @extend %s12;
+  background-color: color("teal", "lighten-2");
+}
+
+.col_full_width_on_mobile {
+  @extend %col;
+  @extend %s12;
+  @extend %m6;
+  background-color: color("teal", "lighten-2");
+}
+
+.test21 { background-color: color("blue", "lighten-2"); }
+.test22, .test23, .test24 { background-color: color("teal", "lighten-2"); }
+
+.test21 {
+  @extend %col;
+  @extend %s12;
+}
+
+.test22 {
+  @extend %col;
+  @extend %s12;
+  @extend %m4;
+  @extend %l2;
+}
+
+.test23 {
+  @extend %col;
+  @extend %s12;
+  @extend %m4;
+  @extend %l8;
+}
+
+.test24 {
+  @extend %col;
+  @extend %s12;
+  @extend %m4;
+  @extend %l2;
+}
+
+.test31, .test32, .test33, .test34 {
+  background-color: color("purple", "lighten-3");
+  @extend %col;
+  @extend %s12;
+  @extend %m6;
+  @extend %l3;
+}
+
+.subbs1 {
   @extend %z-depth-1;
 }
 
-.s2 {
+.subbs2 {
   @extend %z-depth-2;
   @extend %materialboxed;
 }
 
-.s3 {
+.subbs3 {
   @extend %z-depth-3;
 }
 
-.s4 {
+.subbs4 {
   @extend %z-depth-4;
 }
 
-.s5 {
+.subbs5 {
   @extend %z-depth-5;
 }
