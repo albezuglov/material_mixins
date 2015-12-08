@@ -31,7 +31,7 @@
 
 
 // Positioning
-@mixin valign-wrapper() {
+%valign-wrapper {
   @include flexbox();
   @include align(center);
 
@@ -49,7 +49,7 @@
 //}
 
 // classic clearfix
-@mixin clearfix() {
+%clearfix {
   clear: both;
 }
 
