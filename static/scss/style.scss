@@ -13,9 +13,9 @@ body {
 .subbs4 { @extend %z-depth-4; }
 .subbs5 { @extend %z-depth-5; }
 
-.test-valign-wrapper { width: 100%; height: 100px; @extend %valign-wrapper; @extend %with_border }
+.test-valign-wrapper { width: 100%; height: 100px; @extend %valign-wrapper; @extend %with_border; }
 .test-valign { @extend %valign; }
-.test-truncate { @extend %truncate; }
+.test-truncate { max-width: 300px; background-color: #eee; @extend %truncate; @extend %with_border; }
 .test-card { @extend %card; @extend %hoverable; @extend %small; }
 .test-card-image { @extend %card-image; }
 .test-card-title { @extend %card-title; }

@@ -1,35 +1,497 @@
-/*
-Sass::SyntaxError: ".test-card" failed to @extend "%card".
-The selector "%card" was not found.
-Use "@extend %card !optional" if the extend should be able to fail.
+/*** Colors ***/
+/*** Badges ***/
+/*** Buttons ***/
+/*** Cards ***/
+/*** Collapsible ***/
+/*** Chips ***/
+/*** Date Picker ***/
+/*** Dropdown ***/
+/*** Fonts ***/
+/*** Forms ***/
+/*** Global ***/
+/*** Navbar ***/
+/*** SideNav ***/
+/*** Photo Slider ***/
+/*** Spinners | Loaders ***/
+/*** Tabs ***/
+/*** Tables ***/
+/*** Toasts ***/
+/*** Typography ***/
+/*** Collections ***/
+/* Progress Bar */
+a {
+  text-decoration: none; }
 
+html {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87); }
+  @media only screen and (min-width: 0) {
+    html {
+      font-size: 14px; } }
+  @media only screen and (min-width: 992px) {
+    html {
+      font-size: 14.5px; } }
+  @media only screen and (min-width: 1200px) {
+    html {
+      font-size: 15px; } }
 
-Backtrace:
-V:\domains\material.loc\static\scss\style.scss:19
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/extend.rb:61:in `block in check_extends_fired!'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util/subset_map.rb:105:in `block in each_value'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util/subset_map.rb:105:in `each'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/util/subset_map.rb:105:in `each_value'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/extend.rb:50:in `check_extends_fired!'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/extend.rb:16:in `visit'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:39:in `css_tree'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin.rb:82:in `update_stylesheets'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
-V:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/bin/scss:13:in `<top (required)>'
-V:/Ruby22-x64/bin/scss:23:in `load'
-V:/Ruby22-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Sass::SyntaxError: \".test-card\" failed to @extend \"%card\".\A The selector \"%card\" was not found.\A Use \"@extend %card !optional\" if the extend should be able to fail.\A "; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit; }
+
+h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.1rem 0 1.68rem 0; }
+
+h2 {
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 1.78rem 0 1.424rem 0; }
+
+h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.46rem 0 1.168rem 0; }
+
+h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.14rem 0 0.912rem 0; }
+
+h5 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 0.82rem 0 0.656rem 0; }
+
+h6 {
+  font-size: 1rem;
+  line-height: 110%;
+  margin: 0.5rem 0 0.4rem 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 500; }
+
+small {
+  font-size: 75%; }
+
+.grid_test span, .grid_test p {
+  font-weight: 300; }
+  @media only screen and (min-width: 360px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 390px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.224rem; } }
+  @media only screen and (min-width: 420px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.248rem; } }
+  @media only screen and (min-width: 450px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.272rem; } }
+  @media only screen and (min-width: 480px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.296rem; } }
+  @media only screen and (min-width: 510px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.32rem; } }
+  @media only screen and (min-width: 540px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.344rem; } }
+  @media only screen and (min-width: 570px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.368rem; } }
+  @media only screen and (min-width: 600px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.392rem; } }
+  @media only screen and (min-width: 630px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.416rem; } }
+  @media only screen and (min-width: 660px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.44rem; } }
+  @media only screen and (min-width: 690px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.464rem; } }
+  @media only screen and (min-width: 720px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.488rem; } }
+  @media only screen and (min-width: 750px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.512rem; } }
+  @media only screen and (min-width: 780px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.536rem; } }
+  @media only screen and (min-width: 810px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.56rem; } }
+  @media only screen and (min-width: 840px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.584rem; } }
+  @media only screen and (min-width: 870px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.608rem; } }
+  @media only screen and (min-width: 900px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.632rem; } }
+  @media only screen and (min-width: 930px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.656rem; } }
+  @media only screen and (min-width: 960px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.68rem; } }
+  @media only screen and (max-width: 360px) {
+    .grid_test span, .grid_test p {
+      font-size: 1.2rem; } }
+
+.test-valign-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .test-valign-wrapper .test-valign {
+    display: block; }
+
+.test-card, .subbs1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.subbs2 {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.subbs3 {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+.subbs4 {
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
+
+.subbs5 {
+  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
+
+.test-card:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #eceff1; }
+
+i {
+  line-height: inherit; }
+  i.test-card {
+    font-size: 2rem; }
+/*********************
+  Transition Classes
+**********************/
+/*********************
+  Media Query Classes
+**********************/
+table, th, td {
+  border: none; }
+
+table {
+  width: 100%;
+  display: table; }
+thead {
+  border-bottom: 1px solid #d0d0d0; }
+
+td, th {
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px; }
+
+@-webkit-keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%; }
+  60% {
+    left: 100%;
+    right: -90%; }
+  100% {
+    left: 100%;
+    right: -90%; } }
+@-moz-keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%; }
+  60% {
+    left: 100%;
+    right: -90%; }
+  100% {
+    left: 100%;
+    right: -90%; } }
+@keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%; }
+  60% {
+    left: 100%;
+    right: -90%; }
+  100% {
+    left: 100%;
+    right: -90%; } }
+@-webkit-keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%; }
+  60% {
+    left: 107%;
+    right: -8%; }
+  100% {
+    left: 107%;
+    right: -8%; } }
+@-moz-keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%; }
+  60% {
+    left: 107%;
+    right: -8%; }
+  100% {
+    left: 107%;
+    right: -8%; } }
+@keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%; }
+  60% {
+    left: 107%;
+    right: -8%; }
+  100% {
+    left: 107%;
+    right: -8%; } }
+/*******************
+  Utility Classes
+*******************/
+.test-truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Thin), url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
+  font-weight: 200; }
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Light), url("../font/roboto/Roboto-Light.woff2") format("woff2"), url("../font/roboto/Roboto-Light.woff") format("woff"), url("../font/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300; }
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Regular), url("../font/roboto/Roboto-Regular.woff2") format("woff2"), url("../font/roboto/Roboto-Regular.woff") format("woff"), url("../font/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Medium.woff2") format("woff2"), url("../font/roboto/Roboto-Medium.woff") format("woff"), url("../font/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500; }
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Bold.woff2") format("woff2"), url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700; }
+.subbs2 {
+  display: block;
+  cursor: zoom-in;
+  position: relative;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  transition: opacity 0.4s; }
+  .subbs2:hover {
+    will-change: left, top, width, height; }
+    .subbs2:hover:not(.active) {
+      opacity: .8; }
+
+.active.subbs2 {
+  cursor: zoom-out; }
+
+#materialbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #292929;
+  z-index: 999;
+  will-change: opacity; }
+
+.grid_test {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%; }
+
+@media only screen and (min-width: 601px) {
+  .grid_test {
+    width: 85%; } }
+@media only screen and (min-width: 993px) {
+  .grid_test {
+    width: 70%; } }
+.grid_test .test1, .grid_test .test2, .grid_test .test3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem; }
+
+.test1, .test2, .test3 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }
+  .test1:after, .test2:after, .test3:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .test1 .col_full_width, .test2 .col_full_width, .test3 .col_full_width, .test1 .col_full_width_on_mobile, .test2 .col_full_width_on_mobile, .test3 .col_full_width_on_mobile, .test1 .test21, .test2 .test21, .test3 .test21, .test1 .test22, .test2 .test22, .test3 .test22, .test1 .test23, .test2 .test23, .test3 .test23, .test1 .test24, .test2 .test24, .test3 .test24, .test1 .test31, .test2 .test31, .test3 .test31, .test1 .test32, .test2 .test32, .test3 .test32, .test1 .test33, .test2 .test33, .test3 .test33, .test1 .test34, .test2 .test34, .test3 .test34 {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0.75rem; }
+    .test1 [class*="push-"].col_full_width, .test2 [class*="push-"].col_full_width, .test3 [class*="push-"].col_full_width, .test1 [class*="push-"].col_full_width_on_mobile, .test2 [class*="push-"].col_full_width_on_mobile, .test3 [class*="push-"].col_full_width_on_mobile, .test1 [class*="push-"].test21, .test2 [class*="push-"].test21, .test3 [class*="push-"].test21, .test1 [class*="push-"].test22, .test2 [class*="push-"].test22, .test3 [class*="push-"].test22, .test1 [class*="push-"].test23, .test2 [class*="push-"].test23, .test3 [class*="push-"].test23, .test1 [class*="push-"].test24, .test2 [class*="push-"].test24, .test3 [class*="push-"].test24, .test1 [class*="push-"].test31, .test2 [class*="push-"].test31, .test3 [class*="push-"].test31, .test1 [class*="push-"].test32, .test2 [class*="push-"].test32, .test3 [class*="push-"].test32, .test1 [class*="push-"].test33, .test2 [class*="push-"].test33, .test3 [class*="push-"].test33, .test1 [class*="push-"].test34, .test2 [class*="push-"].test34, .test3 [class*="push-"].test34, .test1 [class*="pull-"].col_full_width, .test2 [class*="pull-"].col_full_width, .test3 [class*="pull-"].col_full_width, .test1 [class*="pull-"].col_full_width_on_mobile, .test2 [class*="pull-"].col_full_width_on_mobile, .test3 [class*="pull-"].col_full_width_on_mobile, .test1 [class*="pull-"].test21, .test2 [class*="pull-"].test21, .test3 [class*="pull-"].test21, .test1 [class*="pull-"].test22, .test2 [class*="pull-"].test22, .test3 [class*="pull-"].test22, .test1 [class*="pull-"].test23, .test2 [class*="pull-"].test23, .test3 [class*="pull-"].test23, .test1 [class*="pull-"].test24, .test2 [class*="pull-"].test24, .test3 [class*="pull-"].test24, .test1 [class*="pull-"].test31, .test2 [class*="pull-"].test31, .test3 [class*="pull-"].test31, .test1 [class*="pull-"].test32, .test2 [class*="pull-"].test32, .test3 [class*="pull-"].test32, .test1 [class*="pull-"].test33, .test2 [class*="pull-"].test33, .test3 [class*="pull-"].test33, .test1 [class*="pull-"].test34, .test2 [class*="pull-"].test34, .test3 [class*="pull-"].test34 {
+      position: relative; }
+    .test1 .col_full_width, .test2 .col_full_width, .test3 .col_full_width, .test1 .col_full_width_on_mobile, .test2 .col_full_width_on_mobile, .test3 .col_full_width_on_mobile, .test1 .test21, .test2 .test21, .test3 .test21, .test1 .test22, .test2 .test22, .test3 .test22, .test1 .test23, .test2 .test23, .test3 .test23, .test1 .test24, .test2 .test24, .test3 .test24, .test1 .test31, .test2 .test31, .test3 .test31, .test1 .test32, .test2 .test32, .test3 .test32, .test1 .test33, .test2 .test33, .test3 .test33, .test1 .test34, .test2 .test34, .test3 .test34 {
+      width: 100%;
+      margin-left: 0; }
+    @media only screen and (min-width: 601px) {
+      .test1 .col_full_width.test22, .test2 .col_full_width.test22, .test3 .col_full_width.test22, .test1 .col_full_width.test23, .test2 .col_full_width.test23, .test3 .col_full_width.test23, .test1 .col_full_width.test24, .test2 .col_full_width.test24, .test3 .col_full_width.test24, .test1 .col_full_width_on_mobile.test22, .test2 .col_full_width_on_mobile.test22, .test3 .col_full_width_on_mobile.test22, .test1 .col_full_width_on_mobile.test23, .test2 .col_full_width_on_mobile.test23, .test3 .col_full_width_on_mobile.test23, .test1 .col_full_width_on_mobile.test24, .test2 .col_full_width_on_mobile.test24, .test3 .col_full_width_on_mobile.test24, .test1 .test21.test22, .test2 .test21.test22, .test3 .test21.test22, .test1 .test21.test23, .test2 .test21.test23, .test3 .test21.test23, .test1 .test21.test24, .test2 .test21.test24, .test3 .test21.test24, .test1 .test22, .test2 .test22, .test3 .test22, .test1 .test23, .test2 .test23, .test3 .test23, .test1 .test24, .test2 .test24, .test3 .test24, .test1 .test31.test22, .test2 .test31.test22, .test3 .test31.test22, .test1 .test31.test23, .test2 .test31.test23, .test3 .test31.test23, .test1 .test31.test24, .test2 .test31.test24, .test3 .test31.test24, .test1 .test32.test22, .test2 .test32.test22, .test3 .test32.test22, .test1 .test32.test23, .test2 .test32.test23, .test3 .test32.test23, .test1 .test32.test24, .test2 .test32.test24, .test3 .test32.test24, .test1 .test33.test22, .test2 .test33.test22, .test3 .test33.test22, .test1 .test33.test23, .test2 .test33.test23, .test3 .test33.test23, .test1 .test33.test24, .test2 .test33.test24, .test3 .test33.test24, .test1 .test34.test22, .test2 .test34.test22, .test3 .test34.test22, .test1 .test34.test23, .test2 .test34.test23, .test3 .test34.test23, .test1 .test34.test24, .test2 .test34.test24, .test3 .test34.test24 {
+        width: 33.33333%;
+        margin-left: 0; }
+      .test1 .col_full_width.col_full_width_on_mobile, .test2 .col_full_width.col_full_width_on_mobile, .test3 .col_full_width.col_full_width_on_mobile, .test1 .col_full_width.test31, .test2 .col_full_width.test31, .test3 .col_full_width.test31, .test1 .col_full_width.test32, .test2 .col_full_width.test32, .test3 .col_full_width.test32, .test1 .col_full_width.test33, .test2 .col_full_width.test33, .test3 .col_full_width.test33, .test1 .col_full_width.test34, .test2 .col_full_width.test34, .test3 .col_full_width.test34, .test1 .col_full_width_on_mobile, .test2 .col_full_width_on_mobile, .test3 .col_full_width_on_mobile, .test1 .test21.col_full_width_on_mobile, .test2 .test21.col_full_width_on_mobile, .test3 .test21.col_full_width_on_mobile, .test1 .test21.test31, .test2 .test21.test31, .test3 .test21.test31, .test1 .test21.test32, .test2 .test21.test32, .test3 .test21.test32, .test1 .test21.test33, .test2 .test21.test33, .test3 .test21.test33, .test1 .test21.test34, .test2 .test21.test34, .test3 .test21.test34, .test1 .test22.col_full_width_on_mobile, .test2 .test22.col_full_width_on_mobile, .test3 .test22.col_full_width_on_mobile, .test1 .test22.test31, .test2 .test22.test31, .test3 .test22.test31, .test1 .test22.test32, .test2 .test22.test32, .test3 .test22.test32, .test1 .test22.test33, .test2 .test22.test33, .test3 .test22.test33, .test1 .test22.test34, .test2 .test22.test34, .test3 .test22.test34, .test1 .test23.col_full_width_on_mobile, .test2 .test23.col_full_width_on_mobile, .test3 .test23.col_full_width_on_mobile, .test1 .test23.test31, .test2 .test23.test31, .test3 .test23.test31, .test1 .test23.test32, .test2 .test23.test32, .test3 .test23.test32, .test1 .test23.test33, .test2 .test23.test33, .test3 .test23.test33, .test1 .test23.test34, .test2 .test23.test34, .test3 .test23.test34, .test1 .test24.col_full_width_on_mobile, .test2 .test24.col_full_width_on_mobile, .test3 .test24.col_full_width_on_mobile, .test1 .test24.test31, .test2 .test24.test31, .test3 .test24.test31, .test1 .test24.test32, .test2 .test24.test32, .test3 .test24.test32, .test1 .test24.test33, .test2 .test24.test33, .test3 .test24.test33, .test1 .test24.test34, .test2 .test24.test34, .test3 .test24.test34, .test1 .test31, .test2 .test31, .test3 .test31, .test1 .test32, .test2 .test32, .test3 .test32, .test1 .test33, .test2 .test33, .test3 .test33, .test1 .test34, .test2 .test34, .test3 .test34 {
+        width: 50%;
+        margin-left: 0; } }
+    @media only screen and (min-width: 993px) {
+      .test1 .col_full_width.test22, .test2 .col_full_width.test22, .test3 .col_full_width.test22, .test1 .col_full_width.test24, .test2 .col_full_width.test24, .test3 .col_full_width.test24, .test1 .col_full_width_on_mobile.test22, .test2 .col_full_width_on_mobile.test22, .test3 .col_full_width_on_mobile.test22, .test1 .col_full_width_on_mobile.test24, .test2 .col_full_width_on_mobile.test24, .test3 .col_full_width_on_mobile.test24, .test1 .test21.test22, .test2 .test21.test22, .test3 .test21.test22, .test1 .test21.test24, .test2 .test21.test24, .test3 .test21.test24, .test1 .test22, .test2 .test22, .test3 .test22, .test1 .test23.test22, .test2 .test23.test22, .test3 .test23.test22, .test1 .test23.test24, .test2 .test23.test24, .test3 .test23.test24, .test1 .test24, .test2 .test24, .test3 .test24, .test1 .test31.test22, .test2 .test31.test22, .test3 .test31.test22, .test1 .test31.test24, .test2 .test31.test24, .test3 .test31.test24, .test1 .test32.test22, .test2 .test32.test22, .test3 .test32.test22, .test1 .test32.test24, .test2 .test32.test24, .test3 .test32.test24, .test1 .test33.test22, .test2 .test33.test22, .test3 .test33.test22, .test1 .test33.test24, .test2 .test33.test24, .test3 .test33.test24, .test1 .test34.test22, .test2 .test34.test22, .test3 .test34.test22, .test1 .test34.test24, .test2 .test34.test24, .test3 .test34.test24 {
+        width: 16.66667%;
+        margin-left: 0; }
+      .test1 .col_full_width.test31, .test2 .col_full_width.test31, .test3 .col_full_width.test31, .test1 .col_full_width.test32, .test2 .col_full_width.test32, .test3 .col_full_width.test32, .test1 .col_full_width.test33, .test2 .col_full_width.test33, .test3 .col_full_width.test33, .test1 .col_full_width.test34, .test2 .col_full_width.test34, .test3 .col_full_width.test34, .test1 .col_full_width_on_mobile.test31, .test2 .col_full_width_on_mobile.test31, .test3 .col_full_width_on_mobile.test31, .test1 .col_full_width_on_mobile.test32, .test2 .col_full_width_on_mobile.test32, .test3 .col_full_width_on_mobile.test32, .test1 .col_full_width_on_mobile.test33, .test2 .col_full_width_on_mobile.test33, .test3 .col_full_width_on_mobile.test33, .test1 .col_full_width_on_mobile.test34, .test2 .col_full_width_on_mobile.test34, .test3 .col_full_width_on_mobile.test34, .test1 .test21.test31, .test2 .test21.test31, .test3 .test21.test31, .test1 .test21.test32, .test2 .test21.test32, .test3 .test21.test32, .test1 .test21.test33, .test2 .test21.test33, .test3 .test21.test33, .test1 .test21.test34, .test2 .test21.test34, .test3 .test21.test34, .test1 .test22.test31, .test2 .test22.test31, .test3 .test22.test31, .test1 .test22.test32, .test2 .test22.test32, .test3 .test22.test32, .test1 .test22.test33, .test2 .test22.test33, .test3 .test22.test33, .test1 .test22.test34, .test2 .test22.test34, .test3 .test22.test34, .test1 .test23.test31, .test2 .test23.test31, .test3 .test23.test31, .test1 .test23.test32, .test2 .test23.test32, .test3 .test23.test32, .test1 .test23.test33, .test2 .test23.test33, .test3 .test23.test33, .test1 .test23.test34, .test2 .test23.test34, .test3 .test23.test34, .test1 .test24.test31, .test2 .test24.test31, .test3 .test24.test31, .test1 .test24.test32, .test2 .test24.test32, .test3 .test24.test32, .test1 .test24.test33, .test2 .test24.test33, .test3 .test24.test33, .test1 .test24.test34, .test2 .test24.test34, .test3 .test24.test34, .test1 .test31, .test2 .test31, .test3 .test31, .test1 .test32, .test2 .test32, .test3 .test32, .test1 .test33, .test2 .test33, .test3 .test33, .test1 .test34, .test2 .test34, .test3 .test34 {
+        width: 25%;
+        margin-left: 0; }
+      .test1 .test23, .test2 .test23, .test3 .test23 {
+        width: 66.66667%;
+        margin-left: 0; } }
+
+.test-card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px; }
+  .test-card .test-card-title {
+    font-size: 24px;
+    font-weight: 300; }
+  .test-card {
+    position: relative; }
+    .test-card .test-card-image {
+      max-height: 60%;
+      overflow: hidden; }
+    .test-card .test-card-content {
+      max-height: 40%;
+      overflow: hidden; }
+    .test-card .test-card-action {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-color: inherit; }
+  .test-card {
+    height: 300px; }
+  .test-card .test-card-image {
+    position: relative; }
+    .test-card .test-card-image img {
+      display: block;
+      border-radius: 2px 2px 0 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%; }
+    .test-card .test-card-image .test-card-title {
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 20px; }
+  .test-card .test-card-content {
+    padding: 20px;
+    border-radius: 0 0 2px 2px; }
+    .test-card .test-card-content p {
+      margin: 0;
+      color: inherit; }
+    .test-card .test-card-content .test-card-title {
+      line-height: 48px; }
+  .test-card .test-card-action {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 20px; }
+    .test-card .test-card-action a {
+      color: #ffab40;
+      margin-right: 20px;
+      -webkit-transition: color 0.3s ease;
+      -moz-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      -ms-transition: color 0.3s ease;
+      transition: color 0.3s ease;
+      text-transform: uppercase; }
+      .test-card .test-card-action a:hover {
+        color: #ffd8a6; }
+.subb, .test-valign-wrapper, .test-truncate {
+  border: 1px solid #a21318; }
+
+body {
+  background-color: #c0cad1;
+  color: #8598a5; }
+
+.subb {
+  display: inline-block;
+  width: 12%;
+  margin: 2em;
+  height: 50px; }
+
+.test-valign-wrapper {
+  width: 100%;
+  height: 100px; }
+
+.test-truncate {
+  max-width: 300px;
+  background-color: #eee; }
+
+.grid_test {
+  background-color: tomato;
+  border: 1px solid #eee;
+  color: white;
+  font-size: 18px;
+  line-height: 2em;
+  margin: 7px 0;
+  padding: 0;
+  text-align: center; }
+
+.col_full_width {
+  background-color: #4db6ac; }
+
+.col_full_width_on_mobile {
+  background-color: #4db6ac; }
+
+.test21 {
+  background-color: #64B5F6; }
+
+.test22, .test23, .test24 {
+  background-color: #4db6ac; }
+
+.test31, .test32, .test33, .test34 {
+  background-color: #ce93d8; }
+
+/*# sourceMappingURL=style.css.map */
