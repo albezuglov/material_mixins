@@ -1,0 +1,10 @@
+@import "localcomp/settings";
+@import "localcomp/utils";
+
+.mbox_row { @extend %row; }
+.mbox_col { @extend %col; @extend %s6; }
+.card_large { @extend %card; @extend %large; }
+.card_image { @extend %card-image; }
+.card_image img { @extend %materialboxed; }
+.card_content { @extend %card-content; }
+.card_content span { @extend %card-title; @extend %activator;  } //@extend %grey-text; @extend %text-darken-4;

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Documentation - Materialize</title>
+    <!-- CSS  -->
+      <link href="/static/css/materialbox.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  </head>
+  <body>
+
+  <div class="mbox_row">
+
+  <div class="mbox_col">
+
+    <div class="card_large">
+        <div class="card_image">
+          <img materialize="" width="650" src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?q=80&fm=jpg&s=643e44f5177366de6cc914c8bcfbe064">
+        </div>
+        <div class="card_content">
+          <span>Materialbox inside card image</span>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/static/js/materialize.js"></script>
+
+    <script type="text/javascript">
+    $( document ).ready(function() {
+      $(".button-collapse").sideNav({
+         edge: 'right', menuWidth: '90%'
+       });
+
+      $('select').material_select();
+
+
+
+    });
+
+
+
+    </script>
+  </body>
+</html>
