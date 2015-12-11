@@ -125,7 +125,7 @@ td, th {
 .option2 {
   float: right !important; }
 
-input[type=range] {
+input[type=range], input[type=range] + .thumb {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -213,29 +213,29 @@ i.mdi-search:before {
 i.mdi-close:before {
   content: "\e8aa"; }
 
-.anketa, .select-fields, .range-select {
+.anketa, .select-fields, .range_select {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px; }
-  .anketa:after, .select-fields:after, .range-select:after {
+  .anketa:after, .select-fields:after, .range_select:after {
     content: "";
     display: table;
     clear: both; }
-  .anketa .my-input-field, .select-fields .my-input-field, .range-select .my-input-field, .anketa .my-input-field-bigger, .select-fields .my-input-field-bigger, .range-select .my-input-field-bigger, .anketa .email, .select-fields .email, .range-select .email, .anketa .my-full-width-input-field, .select-fields .my-full-width-input-field, .range-select .my-full-width-input-field, .anketa .range_selecter, .select-fields .range_selecter, .range-select .range_selecter {
+  .anketa .my-input-field, .select-fields .my-input-field, .range_select .my-input-field, .anketa .my-input-field-bigger, .select-fields .my-input-field-bigger, .range_select .my-input-field-bigger, .anketa .email, .select-fields .email, .range_select .email, .anketa .my-full-width-input-field, .select-fields .my-full-width-input-field, .range_select .my-full-width-input-field, .anketa .range_selecter, .select-fields .range_selecter, .range_select .range_selecter {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 0.75rem; }
-    .anketa [class*="push-"].my-input-field, .select-fields [class*="push-"].my-input-field, .range-select [class*="push-"].my-input-field, .anketa [class*="push-"].my-input-field-bigger, .select-fields [class*="push-"].my-input-field-bigger, .range-select [class*="push-"].my-input-field-bigger, .anketa [class*="push-"].email, .select-fields [class*="push-"].email, .range-select [class*="push-"].email, .anketa [class*="push-"].my-full-width-input-field, .select-fields [class*="push-"].my-full-width-input-field, .range-select [class*="push-"].my-full-width-input-field, .anketa [class*="push-"].range_selecter, .select-fields [class*="push-"].range_selecter, .range-select [class*="push-"].range_selecter, .anketa [class*="pull-"].my-input-field, .select-fields [class*="pull-"].my-input-field, .range-select [class*="pull-"].my-input-field, .anketa [class*="pull-"].my-input-field-bigger, .select-fields [class*="pull-"].my-input-field-bigger, .range-select [class*="pull-"].my-input-field-bigger, .anketa [class*="pull-"].email, .select-fields [class*="pull-"].email, .range-select [class*="pull-"].email, .anketa [class*="pull-"].my-full-width-input-field, .select-fields [class*="pull-"].my-full-width-input-field, .range-select [class*="pull-"].my-full-width-input-field, .anketa [class*="pull-"].range_selecter, .select-fields [class*="pull-"].range_selecter, .range-select [class*="pull-"].range_selecter {
+    .anketa [class*="push-"].my-input-field, .select-fields [class*="push-"].my-input-field, .range_select [class*="push-"].my-input-field, .anketa [class*="push-"].my-input-field-bigger, .select-fields [class*="push-"].my-input-field-bigger, .range_select [class*="push-"].my-input-field-bigger, .anketa [class*="push-"].email, .select-fields [class*="push-"].email, .range_select [class*="push-"].email, .anketa [class*="push-"].my-full-width-input-field, .select-fields [class*="push-"].my-full-width-input-field, .range_select [class*="push-"].my-full-width-input-field, .anketa [class*="push-"].range_selecter, .select-fields [class*="push-"].range_selecter, .range_select [class*="push-"].range_selecter, .anketa [class*="pull-"].my-input-field, .select-fields [class*="pull-"].my-input-field, .range_select [class*="pull-"].my-input-field, .anketa [class*="pull-"].my-input-field-bigger, .select-fields [class*="pull-"].my-input-field-bigger, .range_select [class*="pull-"].my-input-field-bigger, .anketa [class*="pull-"].email, .select-fields [class*="pull-"].email, .range_select [class*="pull-"].email, .anketa [class*="pull-"].my-full-width-input-field, .select-fields [class*="pull-"].my-full-width-input-field, .range_select [class*="pull-"].my-full-width-input-field, .anketa [class*="pull-"].range_selecter, .select-fields [class*="pull-"].range_selecter, .range_select [class*="pull-"].range_selecter {
       position: relative; }
-    .anketa .my-input-field, .select-fields .my-input-field, .range-select .my-input-field {
+    .anketa .my-input-field, .select-fields .my-input-field, .range_select .my-input-field {
       width: 33.33333%;
       margin-left: 0; }
-    .anketa .my-input-field-bigger, .select-fields .my-input-field-bigger, .range-select .my-input-field-bigger, .anketa .range_selecter, .select-fields .range_selecter, .range-select .range_selecter {
+    .anketa .my-input-field-bigger, .select-fields .my-input-field-bigger, .range_select .my-input-field-bigger, .anketa .range_selecter, .select-fields .range_selecter, .range_select .range_selecter {
       width: 50%;
       margin-left: 0; }
-    .anketa .anketa.my-input-field, .select-fields .anketa.my-input-field, .range-select .anketa.my-input-field, .anketa .anketa.my-input-field-bigger, .select-fields .anketa.my-input-field-bigger, .range-select .anketa.my-input-field-bigger, .anketa .anketa.range_selecter, .select-fields .anketa.range_selecter, .range-select .anketa.range_selecter, .anketa .select-fields.my-input-field, .select-fields .select-fields.my-input-field, .range-select .select-fields.my-input-field, .anketa .select-fields.my-input-field-bigger, .select-fields .select-fields.my-input-field-bigger, .range-select .select-fields.my-input-field-bigger, .anketa .select-fields.range_selecter, .select-fields .select-fields.range_selecter, .range-select .select-fields.range_selecter, .anketa .email, .select-fields .email, .range-select .email, .anketa .my-full-width-input-field, .select-fields .my-full-width-input-field, .range-select .my-full-width-input-field {
+    .anketa .anketa.my-input-field, .select-fields .anketa.my-input-field, .range_select .anketa.my-input-field, .anketa .anketa.my-input-field-bigger, .select-fields .anketa.my-input-field-bigger, .range_select .anketa.my-input-field-bigger, .anketa .anketa.range_selecter, .select-fields .anketa.range_selecter, .range_select .anketa.range_selecter, .anketa .select-fields.my-input-field, .select-fields .select-fields.my-input-field, .range_select .select-fields.my-input-field, .anketa .select-fields.my-input-field-bigger, .select-fields .select-fields.my-input-field-bigger, .range_select .select-fields.my-input-field-bigger, .anketa .select-fields.range_selecter, .select-fields .select-fields.range_selecter, .range_select .select-fields.range_selecter, .anketa .email, .select-fields .email, .range_select .email, .anketa .my-full-width-input-field, .select-fields .my-full-width-input-field, .range_select .my-full-width-input-field {
       width: 100%;
       margin-left: 0; }
 nav {
@@ -939,7 +939,7 @@ select:disabled {
 .range_selecter {
   position: relative; }
 
-input[type=range] {
+input[type=range], input[type=range] + .thumb {
   cursor: pointer; }
 
 input[type=range] {
@@ -950,6 +950,44 @@ input[type=range] {
   width: 100%;
   margin: 15px 0px;
   padding: 0; }
+
+input[type=range] + .thumb {
+  position: absolute;
+  border: none;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background-color: #26a69a;
+  top: 10px;
+  margin-left: -6px;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+  input[type=range] + .thumb .value {
+    display: block;
+    width: 30px;
+    text-align: center;
+    color: #26a69a;
+    font-size: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  input[type=range] + .active.thumb {
+    border-radius: 50% 50% 50% 0; }
+    input[type=range] + .active.thumb .value {
+      color: #fff;
+      margin-left: -1px;
+      margin-top: 8px;
+      font-size: 10px; }
 
 input[type=range]:focus {
   outline: none; }

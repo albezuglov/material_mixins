@@ -16,5 +16,5 @@ i.mdi-close { @extend %mdi-navigation-close; }
 .option1, .option2 { @extend %circle; }
 .option2 { @extend %right; }
 
-.range-select { @extend %row; }
+.range_select { @extend %row; }
 .range_selecter { @extend %range-field; @extend %col; @extend %s6; }

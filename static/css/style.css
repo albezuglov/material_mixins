@@ -150,7 +150,7 @@ td, th {
 /*******************
   Utility Classes
 *******************/
-input[type=range] {
+input[type=range], input[type=range] + .thumb {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1056,7 +1056,7 @@ select:disabled {
 /***************
       Range
 ***************/
-input[type=range] {
+input[type=range], input[type=range] + .thumb {
   cursor: pointer; }
 
 input[type=range] {
@@ -1067,6 +1067,44 @@ input[type=range] {
   width: 100%;
   margin: 15px 0px;
   padding: 0; }
+
+input[type=range] + .thumb {
+  position: absolute;
+  border: none;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background-color: #26a69a;
+  top: 10px;
+  margin-left: -6px;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+  input[type=range] + .thumb .value {
+    display: block;
+    width: 30px;
+    text-align: center;
+    color: #26a69a;
+    font-size: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  input[type=range] + .active.thumb {
+    border-radius: 50% 50% 50% 0; }
+    input[type=range] + .active.thumb .value {
+      color: #fff;
+      margin-left: -1px;
+      margin-top: 8px;
+      font-size: 10px; }
 
 input[type=range]:focus {
   outline: none; }
