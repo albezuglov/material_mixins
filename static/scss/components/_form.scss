@@ -691,10 +691,10 @@ select:disabled {
 }
 
 // Optgroup styles
-%select-dropdown li%optgroup {
+%select-dropdown li.optgroup {
   border-top: 1px solid $dropdown-hover-bg-color;
 
-  &%selected > span {
+  &.selected > span {
     color: rgba(0, 0, 0, .7);
   }
 
@@ -702,7 +702,7 @@ select:disabled {
     color: rgba(0, 0, 0, .4);
   }
 
-  & ~ li:not(%optgroup) {
+  & ~ li:not(.optgroup) {
     padding-left: 1rem;
   }
 }
@@ -917,3 +917,9 @@ select {
    border-radius: 2px;
    height: 3rem;
 }
+
+.select-wrapper { @extend %select-wrapper; }
+.select-label { @extend %select-label; }
+.caret { @extend  %caret; }
+.select-dropdown { @extend %select-dropdown; }
+.dropdown-content { @extend %dropdown-content; }

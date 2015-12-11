@@ -19,42 +19,13 @@
 /*** Typography ***/
 /*** Collections ***/
 /* Progress Bar */
-.test-valign-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
-  .test-valign-wrapper .test-valign {
-    display: block; }
-
 ul {
   padding: 0; }
   ul li {
     list-style-type: none; }
 
-nav, .test-card, .dropdown-content, .subbs1 {
+nav, .dropdown-content {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
-
-.subbs2 {
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.subbs3 {
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
-
-.subbs4 {
-  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
-
-.subbs5 {
-  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
-
-.test-card:hover {
-  transition: box-shadow .25s;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 blockquote {
   margin: 20px 0;
@@ -63,8 +34,6 @@ blockquote {
 
 i {
   line-height: inherit; }
-  i.test-card {
-    font-size: 2rem; }
 /*********************
   Transition Classes
 **********************/
@@ -158,12 +127,6 @@ input[type=range] {
   -ms-user-select: none;
   user-select: none; }
 
-.test-truncate {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
 @font-face {
   font-family: "Material-Design-Icons";
   src: url("../font/material-design-icons/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("../font/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("../font/material-design-icons/Material-Design-Icons.woff") format("woff"), url("../font/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("../font/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
@@ -235,58 +198,34 @@ input[type=range] {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 /* Start Icons */
-.grid_test {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 90%; }
+i.mdi-search:before {
+  content: "\e661"; }
 
-@media only screen and (min-width: 601px) {
-  .grid_test {
-    width: 85%; } }
-@media only screen and (min-width: 993px) {
-  .grid_test {
-    width: 70%; } }
-.grid_test .test1, .grid_test .test2, .grid_test .test3 {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem; }
+i.mdi-close:before {
+  content: "\e8aa"; }
 
-.test1, .test2, .test3 {
+.row {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px; }
-  .test1:after, .test2:after, .test3:after {
+  .row:after {
     content: "";
     display: table;
     clear: both; }
-  .test1 .col_full_width, .test2 .col_full_width, .test3 .col_full_width, .test1 .col_full_width_on_mobile, .test2 .col_full_width_on_mobile, .test3 .col_full_width_on_mobile, .test1 .test21, .test2 .test21, .test3 .test21, .test1 .test22, .test2 .test22, .test3 .test22, .test1 .test23, .test2 .test23, .test3 .test23, .test1 .test24, .test2 .test24, .test3 .test24, .test1 .test31, .test2 .test31, .test3 .test31, .test1 .test32, .test2 .test32, .test3 .test32, .test1 .test33, .test2 .test33, .test3 .test33, .test1 .test34, .test2 .test34, .test3 .test34 {
+  .row .anketa, .row .my-input-field, .row .email {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 0.75rem; }
-    .test1 [class*="push-"].col_full_width, .test2 [class*="push-"].col_full_width, .test3 [class*="push-"].col_full_width, .test1 [class*="push-"].col_full_width_on_mobile, .test2 [class*="push-"].col_full_width_on_mobile, .test3 [class*="push-"].col_full_width_on_mobile, .test1 [class*="push-"].test21, .test2 [class*="push-"].test21, .test3 [class*="push-"].test21, .test1 [class*="push-"].test22, .test2 [class*="push-"].test22, .test3 [class*="push-"].test22, .test1 [class*="push-"].test23, .test2 [class*="push-"].test23, .test3 [class*="push-"].test23, .test1 [class*="push-"].test24, .test2 [class*="push-"].test24, .test3 [class*="push-"].test24, .test1 [class*="push-"].test31, .test2 [class*="push-"].test31, .test3 [class*="push-"].test31, .test1 [class*="push-"].test32, .test2 [class*="push-"].test32, .test3 [class*="push-"].test32, .test1 [class*="push-"].test33, .test2 [class*="push-"].test33, .test3 [class*="push-"].test33, .test1 [class*="push-"].test34, .test2 [class*="push-"].test34, .test3 [class*="push-"].test34, .test1 [class*="pull-"].col_full_width, .test2 [class*="pull-"].col_full_width, .test3 [class*="pull-"].col_full_width, .test1 [class*="pull-"].col_full_width_on_mobile, .test2 [class*="pull-"].col_full_width_on_mobile, .test3 [class*="pull-"].col_full_width_on_mobile, .test1 [class*="pull-"].test21, .test2 [class*="pull-"].test21, .test3 [class*="pull-"].test21, .test1 [class*="pull-"].test22, .test2 [class*="pull-"].test22, .test3 [class*="pull-"].test22, .test1 [class*="pull-"].test23, .test2 [class*="pull-"].test23, .test3 [class*="pull-"].test23, .test1 [class*="pull-"].test24, .test2 [class*="pull-"].test24, .test3 [class*="pull-"].test24, .test1 [class*="pull-"].test31, .test2 [class*="pull-"].test31, .test3 [class*="pull-"].test31, .test1 [class*="pull-"].test32, .test2 [class*="pull-"].test32, .test3 [class*="pull-"].test32, .test1 [class*="pull-"].test33, .test2 [class*="pull-"].test33, .test3 [class*="pull-"].test33, .test1 [class*="pull-"].test34, .test2 [class*="pull-"].test34, .test3 [class*="pull-"].test34 {
+    .row [class*="push-"].anketa, .row [class*="push-"].my-input-field, .row [class*="push-"].email, .row [class*="pull-"].anketa, .row [class*="pull-"].my-input-field, .row [class*="pull-"].email {
       position: relative; }
-    .test1 .col_full_width, .test2 .col_full_width, .test3 .col_full_width, .test1 .col_full_width_on_mobile, .test2 .col_full_width_on_mobile, .test3 .col_full_width_on_mobile, .test1 .test21, .test2 .test21, .test3 .test21, .test1 .test22, .test2 .test22, .test3 .test22, .test1 .test23, .test2 .test23, .test3 .test23, .test1 .test24, .test2 .test24, .test3 .test24, .test1 .test31, .test2 .test31, .test3 .test31, .test1 .test32, .test2 .test32, .test3 .test32, .test1 .test33, .test2 .test33, .test3 .test33, .test1 .test34, .test2 .test34, .test3 .test34 {
+    .row .my-input-field {
+      width: 33.33333%;
+      margin-left: 0; }
+    .row .anketa, .row .email {
       width: 100%;
       margin-left: 0; }
-    @media only screen and (min-width: 601px) {
-      .test1 .col_full_width.test22, .test2 .col_full_width.test22, .test3 .col_full_width.test22, .test1 .col_full_width.test23, .test2 .col_full_width.test23, .test3 .col_full_width.test23, .test1 .col_full_width.test24, .test2 .col_full_width.test24, .test3 .col_full_width.test24, .test1 .col_full_width_on_mobile.test22, .test2 .col_full_width_on_mobile.test22, .test3 .col_full_width_on_mobile.test22, .test1 .col_full_width_on_mobile.test23, .test2 .col_full_width_on_mobile.test23, .test3 .col_full_width_on_mobile.test23, .test1 .col_full_width_on_mobile.test24, .test2 .col_full_width_on_mobile.test24, .test3 .col_full_width_on_mobile.test24, .test1 .test21.test22, .test2 .test21.test22, .test3 .test21.test22, .test1 .test21.test23, .test2 .test21.test23, .test3 .test21.test23, .test1 .test21.test24, .test2 .test21.test24, .test3 .test21.test24, .test1 .test22, .test2 .test22, .test3 .test22, .test1 .test23, .test2 .test23, .test3 .test23, .test1 .test24, .test2 .test24, .test3 .test24, .test1 .test31.test22, .test2 .test31.test22, .test3 .test31.test22, .test1 .test31.test23, .test2 .test31.test23, .test3 .test31.test23, .test1 .test31.test24, .test2 .test31.test24, .test3 .test31.test24, .test1 .test32.test22, .test2 .test32.test22, .test3 .test32.test22, .test1 .test32.test23, .test2 .test32.test23, .test3 .test32.test23, .test1 .test32.test24, .test2 .test32.test24, .test3 .test32.test24, .test1 .test33.test22, .test2 .test33.test22, .test3 .test33.test22, .test1 .test33.test23, .test2 .test33.test23, .test3 .test33.test23, .test1 .test33.test24, .test2 .test33.test24, .test3 .test33.test24, .test1 .test34.test22, .test2 .test34.test22, .test3 .test34.test22, .test1 .test34.test23, .test2 .test34.test23, .test3 .test34.test23, .test1 .test34.test24, .test2 .test34.test24, .test3 .test34.test24 {
-        width: 33.33333%;
-        margin-left: 0; }
-      .test1 .col_full_width.col_full_width_on_mobile, .test2 .col_full_width.col_full_width_on_mobile, .test3 .col_full_width.col_full_width_on_mobile, .test1 .col_full_width.test31, .test2 .col_full_width.test31, .test3 .col_full_width.test31, .test1 .col_full_width.test32, .test2 .col_full_width.test32, .test3 .col_full_width.test32, .test1 .col_full_width.test33, .test2 .col_full_width.test33, .test3 .col_full_width.test33, .test1 .col_full_width.test34, .test2 .col_full_width.test34, .test3 .col_full_width.test34, .test1 .col_full_width_on_mobile, .test2 .col_full_width_on_mobile, .test3 .col_full_width_on_mobile, .test1 .test21.col_full_width_on_mobile, .test2 .test21.col_full_width_on_mobile, .test3 .test21.col_full_width_on_mobile, .test1 .test21.test31, .test2 .test21.test31, .test3 .test21.test31, .test1 .test21.test32, .test2 .test21.test32, .test3 .test21.test32, .test1 .test21.test33, .test2 .test21.test33, .test3 .test21.test33, .test1 .test21.test34, .test2 .test21.test34, .test3 .test21.test34, .test1 .test22.col_full_width_on_mobile, .test2 .test22.col_full_width_on_mobile, .test3 .test22.col_full_width_on_mobile, .test1 .test22.test31, .test2 .test22.test31, .test3 .test22.test31, .test1 .test22.test32, .test2 .test22.test32, .test3 .test22.test32, .test1 .test22.test33, .test2 .test22.test33, .test3 .test22.test33, .test1 .test22.test34, .test2 .test22.test34, .test3 .test22.test34, .test1 .test23.col_full_width_on_mobile, .test2 .test23.col_full_width_on_mobile, .test3 .test23.col_full_width_on_mobile, .test1 .test23.test31, .test2 .test23.test31, .test3 .test23.test31, .test1 .test23.test32, .test2 .test23.test32, .test3 .test23.test32, .test1 .test23.test33, .test2 .test23.test33, .test3 .test23.test33, .test1 .test23.test34, .test2 .test23.test34, .test3 .test23.test34, .test1 .test24.col_full_width_on_mobile, .test2 .test24.col_full_width_on_mobile, .test3 .test24.col_full_width_on_mobile, .test1 .test24.test31, .test2 .test24.test31, .test3 .test24.test31, .test1 .test24.test32, .test2 .test24.test32, .test3 .test24.test32, .test1 .test24.test33, .test2 .test24.test33, .test3 .test24.test33, .test1 .test24.test34, .test2 .test24.test34, .test3 .test24.test34, .test1 .test31, .test2 .test31, .test3 .test31, .test1 .test32, .test2 .test32, .test3 .test32, .test1 .test33, .test2 .test33, .test3 .test33, .test1 .test34, .test2 .test34, .test3 .test34 {
-        width: 50%;
-        margin-left: 0; } }
-    @media only screen and (min-width: 993px) {
-      .test1 .col_full_width.test22, .test2 .col_full_width.test22, .test3 .col_full_width.test22, .test1 .col_full_width.test24, .test2 .col_full_width.test24, .test3 .col_full_width.test24, .test1 .col_full_width_on_mobile.test22, .test2 .col_full_width_on_mobile.test22, .test3 .col_full_width_on_mobile.test22, .test1 .col_full_width_on_mobile.test24, .test2 .col_full_width_on_mobile.test24, .test3 .col_full_width_on_mobile.test24, .test1 .test21.test22, .test2 .test21.test22, .test3 .test21.test22, .test1 .test21.test24, .test2 .test21.test24, .test3 .test21.test24, .test1 .test22, .test2 .test22, .test3 .test22, .test1 .test23.test22, .test2 .test23.test22, .test3 .test23.test22, .test1 .test23.test24, .test2 .test23.test24, .test3 .test23.test24, .test1 .test24, .test2 .test24, .test3 .test24, .test1 .test31.test22, .test2 .test31.test22, .test3 .test31.test22, .test1 .test31.test24, .test2 .test31.test24, .test3 .test31.test24, .test1 .test32.test22, .test2 .test32.test22, .test3 .test32.test22, .test1 .test32.test24, .test2 .test32.test24, .test3 .test32.test24, .test1 .test33.test22, .test2 .test33.test22, .test3 .test33.test22, .test1 .test33.test24, .test2 .test33.test24, .test3 .test33.test24, .test1 .test34.test22, .test2 .test34.test22, .test3 .test34.test22, .test1 .test34.test24, .test2 .test34.test24, .test3 .test34.test24 {
-        width: 16.66667%;
-        margin-left: 0; }
-      .test1 .col_full_width.test31, .test2 .col_full_width.test31, .test3 .col_full_width.test31, .test1 .col_full_width.test32, .test2 .col_full_width.test32, .test3 .col_full_width.test32, .test1 .col_full_width.test33, .test2 .col_full_width.test33, .test3 .col_full_width.test33, .test1 .col_full_width.test34, .test2 .col_full_width.test34, .test3 .col_full_width.test34, .test1 .col_full_width_on_mobile.test31, .test2 .col_full_width_on_mobile.test31, .test3 .col_full_width_on_mobile.test31, .test1 .col_full_width_on_mobile.test32, .test2 .col_full_width_on_mobile.test32, .test3 .col_full_width_on_mobile.test32, .test1 .col_full_width_on_mobile.test33, .test2 .col_full_width_on_mobile.test33, .test3 .col_full_width_on_mobile.test33, .test1 .col_full_width_on_mobile.test34, .test2 .col_full_width_on_mobile.test34, .test3 .col_full_width_on_mobile.test34, .test1 .test21.test31, .test2 .test21.test31, .test3 .test21.test31, .test1 .test21.test32, .test2 .test21.test32, .test3 .test21.test32, .test1 .test21.test33, .test2 .test21.test33, .test3 .test21.test33, .test1 .test21.test34, .test2 .test21.test34, .test3 .test21.test34, .test1 .test22.test31, .test2 .test22.test31, .test3 .test22.test31, .test1 .test22.test32, .test2 .test22.test32, .test3 .test22.test32, .test1 .test22.test33, .test2 .test22.test33, .test3 .test22.test33, .test1 .test22.test34, .test2 .test22.test34, .test3 .test22.test34, .test1 .test23.test31, .test2 .test23.test31, .test3 .test23.test31, .test1 .test23.test32, .test2 .test23.test32, .test3 .test23.test32, .test1 .test23.test33, .test2 .test23.test33, .test3 .test23.test33, .test1 .test23.test34, .test2 .test23.test34, .test3 .test23.test34, .test1 .test24.test31, .test2 .test24.test31, .test3 .test24.test31, .test1 .test24.test32, .test2 .test24.test32, .test3 .test24.test32, .test1 .test24.test33, .test2 .test24.test33, .test3 .test24.test33, .test1 .test24.test34, .test2 .test24.test34, .test3 .test24.test34, .test1 .test31, .test2 .test31, .test3 .test31, .test1 .test32, .test2 .test32, .test3 .test32, .test1 .test33, .test2 .test33, .test3 .test33, .test1 .test34, .test2 .test34, .test3 .test34 {
-        width: 25%;
-        margin-left: 0; }
-      .test1 .test23, .test2 .test23, .test3 .test23 {
-        width: 66.66667%;
-        margin-left: 0; } }
-
 nav {
   color: #fff;
   background-color: #eceff1;
@@ -295,6 +234,12 @@ nav {
   line-height: 56px; }
   nav a {
     color: #fff; }
+  nav .my-nav-wrapper {
+    position: relative;
+    height: 100%; }
+    nav .my-nav-wrapper i {
+      display: block;
+      font-size: 2rem; }
   nav ul {
     margin: 0; }
     nav ul li {
@@ -312,8 +257,37 @@ nav {
       color: #fff;
       display: block;
       padding: 0 15px; }
+  nav .my-input-field, nav .email {
+    margin: 0; }
+    nav .my-input-field input, nav .email input {
+      height: 100%;
+      font-size: 1.2rem;
+      border: none;
+      padding-left: 2rem; }
+      nav .my-input-field input:focus, nav .email input:focus, nav .my-input-field input[type=text]:valid, nav .email input[type=text]:valid, nav .my-input-field input[type=password]:valid, nav .email input[type=password]:valid, nav .my-input-field input[type=email]:valid, nav .email input[type=email]:valid, nav .my-input-field input[type=url]:valid, nav .email input[type=url]:valid, nav .my-input-field input[type=date]:valid, nav .email input[type=date]:valid {
+        border: none;
+        box-shadow: none; }
+    nav .my-input-field label, nav .email label {
+      top: 0;
+      left: 0; }
+      nav .my-input-field label i, nav .email label i {
+        color: rgba(255, 255, 255, 0.7);
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        -ms-transition: color 0.3s;
+        transition: color 0.3s; }
+      nav .my-input-field label.active i, nav .email label.active i {
+        color: #fff; }
+      nav .my-input-field label.active, nav .email label.active {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0); }
+
 @media only screen and (min-width: 601px) {
-  nav {
+  nav, nav .my-nav-wrapper i {
     height: 64px;
     line-height: 64px; } }
 @font-face {
@@ -400,140 +374,6 @@ strong {
 small {
   font-size: 75%; }
 
-.grid_test span, .grid_test p {
-  font-weight: 300; }
-  @media only screen and (min-width: 360px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.2rem; } }
-  @media only screen and (min-width: 390px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.224rem; } }
-  @media only screen and (min-width: 420px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.248rem; } }
-  @media only screen and (min-width: 450px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.272rem; } }
-  @media only screen and (min-width: 480px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.296rem; } }
-  @media only screen and (min-width: 510px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.32rem; } }
-  @media only screen and (min-width: 540px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.344rem; } }
-  @media only screen and (min-width: 570px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.368rem; } }
-  @media only screen and (min-width: 600px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.392rem; } }
-  @media only screen and (min-width: 630px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.416rem; } }
-  @media only screen and (min-width: 660px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.44rem; } }
-  @media only screen and (min-width: 690px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.464rem; } }
-  @media only screen and (min-width: 720px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.488rem; } }
-  @media only screen and (min-width: 750px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.512rem; } }
-  @media only screen and (min-width: 780px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.536rem; } }
-  @media only screen and (min-width: 810px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.56rem; } }
-  @media only screen and (min-width: 840px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.584rem; } }
-  @media only screen and (min-width: 870px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.608rem; } }
-  @media only screen and (min-width: 900px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.632rem; } }
-  @media only screen and (min-width: 930px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.656rem; } }
-  @media only screen and (min-width: 960px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.68rem; } }
-  @media only screen and (max-width: 360px) {
-    .grid_test span, .grid_test p {
-      font-size: 1.2rem; } }
-
-.test-card {
-  position: relative;
-  margin: 0.5rem 0 1rem 0;
-  background-color: #fff;
-  transition: box-shadow .25s;
-  border-radius: 2px; }
-  .test-card .test-card-title {
-    font-size: 24px;
-    font-weight: 300; }
-  .test-card {
-    position: relative; }
-    .test-card .test-card-image {
-      max-height: 60%;
-      overflow: hidden; }
-    .test-card .test-card-content {
-      max-height: 40%;
-      overflow: hidden; }
-    .test-card .test-card-action {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 1;
-      background-color: inherit; }
-  .test-card {
-    height: 300px; }
-  .test-card .test-card-image {
-    position: relative; }
-    .test-card .test-card-image img {
-      display: block;
-      border-radius: 2px 2px 0 0;
-      position: relative;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      width: 100%; }
-    .test-card .test-card-image .test-card-title {
-      color: #fff;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 20px; }
-  .test-card .test-card-content {
-    padding: 20px;
-    border-radius: 0 0 2px 2px; }
-    .test-card .test-card-content p {
-      margin: 0;
-      color: inherit; }
-    .test-card .test-card-content .test-card-title {
-      line-height: 48px; }
-  .test-card .test-card-action {
-    border-top: 1px solid rgba(160, 160, 160, 0.2);
-    padding: 20px; }
-    .test-card .test-card-action a {
-      color: #ffab40;
-      margin-right: 20px;
-      -webkit-transition: color 0.3s ease;
-      -moz-transition: color 0.3s ease;
-      -o-transition: color 0.3s ease;
-      -ms-transition: color 0.3s ease;
-      transition: color 0.3s ease;
-      text-transform: uppercase; }
-      .test-card .test-card-action a:hover {
-        color: #ffd8a6; }
 #toast-container {
   display: block;
   position: fixed;
@@ -602,23 +442,6 @@ small {
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
 /* Firefox Bug: link not triggered */
-.subbs2 {
-  display: block;
-  cursor: zoom-in;
-  position: relative;
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  -ms-transition: opacity 0.4s;
-  transition: opacity 0.4s; }
-  .subbs2:hover {
-    will-change: left, top, width, height; }
-    .subbs2:hover:not(.active) {
-      opacity: .8; }
-
-.active.subbs2 {
-  cursor: zoom-out; }
-
 #materialbox-overlay {
   position: fixed;
   top: 0;
@@ -763,6 +586,51 @@ input[type=search] {
     top: 65px;
     opacity: 0;
     transition: .2s opacity ease-out, .2s color ease-out; }
+
+.my-input-field, .email {
+  position: relative;
+  margin-top: 1rem; }
+  .my-input-field label, .email label {
+    color: #9e9e9e;
+    position: absolute;
+    top: 0.8rem;
+    left: 0.75rem;
+    font-size: 1rem;
+    cursor: text;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    transition: 0.2s ease-out; }
+  .my-input-field label.active, .email label.active {
+    font-size: 0.8rem;
+    -webkit-transform: translateY(-140%);
+    -moz-transform: translateY(-140%);
+    -ms-transform: translateY(-140%);
+    -o-transform: translateY(-140%);
+    transform: translateY(-140%); }
+.my-input-field input[type=search], .email input[type=search] {
+  display: block;
+  line-height: inherit;
+  padding-left: 4rem;
+  width: calc(100% - 4rem); }
+  .my-input-field input[type=search]:focus, .email input[type=search]:focus {
+    background-color: #fff;
+    border: 0;
+    box-shadow: none;
+    color: #444; }
+    .my-input-field input[type=search]:focus + label i, .email input[type=search]:focus + label i, .my-input-field input[type=search]:focus ~ i.mdi-close, .email input[type=search]:focus ~ i.mdi-close {
+      color: #444; }
+  .my-input-field input[type=search] + label, .email input[type=search] + label {
+    left: 1rem; }
+  .my-input-field input[type=search] ~ i.mdi-close, .email input[type=search] ~ i.mdi-close {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .3s color; }
 
 textarea {
   width: 100%;
@@ -1507,50 +1375,5 @@ select {
 /**
  * The picker box.
  */
-.subb, .test-valign-wrapper, .test-truncate {
-  border: 1px solid #a21318; }
 
-body {
-  background-color: #c0cad1;
-  color: #8598a5; }
-
-.subb {
-  display: inline-block;
-  width: 12%;
-  margin: 2em;
-  height: 50px; }
-
-.test-valign-wrapper {
-  width: 100%;
-  height: 100px; }
-
-.test-truncate {
-  max-width: 300px;
-  background-color: #eee; }
-
-.grid_test {
-  background-color: tomato;
-  border: 1px solid #eee;
-  color: white;
-  font-size: 18px;
-  line-height: 2em;
-  margin: 7px 0;
-  padding: 0;
-  text-align: center; }
-
-.col_full_width {
-  background-color: #4db6ac; }
-
-.col_full_width_on_mobile {
-  background-color: #4db6ac; }
-
-.test21 {
-  background-color: #64B5F6; }
-
-.test22, .test23, .test24 {
-  background-color: #4db6ac; }
-
-.test31, .test32, .test33, .test34 {
-  background-color: #ce93d8; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=forms.css.map */

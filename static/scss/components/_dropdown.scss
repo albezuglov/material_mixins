@@ -21,11 +21,11 @@
     text-align: left;
     text-transform: none;
 
-    &:hover, &.active, &%selected {
+    &:hover, &.active, &.selected {
       background-color: $dropdown-hover-bg-color;
     }
 
-    &.active%selected {
+    &.active.selected {
       background-color: darken($dropdown-hover-bg-color, 5%);
     }
 
