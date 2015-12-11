@@ -34,6 +34,9 @@ blockquote {
 
 i {
   line-height: inherit; }
+  i.option2 {
+    float: right;
+    margin-left: 15px; }
 /*********************
   Transition Classes
 **********************/
@@ -119,6 +122,9 @@ td, th {
 /*******************
   Utility Classes
 *******************/
+.option2 {
+  float: right !important; }
+
 input[type=range] {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -126,6 +132,9 @@ input[type=range] {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+.option1, .option2 {
+  border-radius: 50%; }
 
 @font-face {
   font-family: "Material-Design-Icons";
@@ -204,26 +213,29 @@ i.mdi-search:before {
 i.mdi-close:before {
   content: "\e8aa"; }
 
-.row {
+.anketa, .select-fields, .range-select {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px; }
-  .row:after {
+  .anketa:after, .select-fields:after, .range-select:after {
     content: "";
     display: table;
     clear: both; }
-  .row .anketa, .row .my-input-field, .row .email {
+  .anketa .my-input-field, .select-fields .my-input-field, .range-select .my-input-field, .anketa .my-input-field-bigger, .select-fields .my-input-field-bigger, .range-select .my-input-field-bigger, .anketa .email, .select-fields .email, .range-select .email, .anketa .my-full-width-input-field, .select-fields .my-full-width-input-field, .range-select .my-full-width-input-field, .anketa .range_selecter, .select-fields .range_selecter, .range-select .range_selecter {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 0.75rem; }
-    .row [class*="push-"].anketa, .row [class*="push-"].my-input-field, .row [class*="push-"].email, .row [class*="pull-"].anketa, .row [class*="pull-"].my-input-field, .row [class*="pull-"].email {
+    .anketa [class*="push-"].my-input-field, .select-fields [class*="push-"].my-input-field, .range-select [class*="push-"].my-input-field, .anketa [class*="push-"].my-input-field-bigger, .select-fields [class*="push-"].my-input-field-bigger, .range-select [class*="push-"].my-input-field-bigger, .anketa [class*="push-"].email, .select-fields [class*="push-"].email, .range-select [class*="push-"].email, .anketa [class*="push-"].my-full-width-input-field, .select-fields [class*="push-"].my-full-width-input-field, .range-select [class*="push-"].my-full-width-input-field, .anketa [class*="push-"].range_selecter, .select-fields [class*="push-"].range_selecter, .range-select [class*="push-"].range_selecter, .anketa [class*="pull-"].my-input-field, .select-fields [class*="pull-"].my-input-field, .range-select [class*="pull-"].my-input-field, .anketa [class*="pull-"].my-input-field-bigger, .select-fields [class*="pull-"].my-input-field-bigger, .range-select [class*="pull-"].my-input-field-bigger, .anketa [class*="pull-"].email, .select-fields [class*="pull-"].email, .range-select [class*="pull-"].email, .anketa [class*="pull-"].my-full-width-input-field, .select-fields [class*="pull-"].my-full-width-input-field, .range-select [class*="pull-"].my-full-width-input-field, .anketa [class*="pull-"].range_selecter, .select-fields [class*="pull-"].range_selecter, .range-select [class*="pull-"].range_selecter {
       position: relative; }
-    .row .my-input-field {
+    .anketa .my-input-field, .select-fields .my-input-field, .range-select .my-input-field {
       width: 33.33333%;
       margin-left: 0; }
-    .row .anketa, .row .email {
+    .anketa .my-input-field-bigger, .select-fields .my-input-field-bigger, .range-select .my-input-field-bigger, .anketa .range_selecter, .select-fields .range_selecter, .range-select .range_selecter {
+      width: 50%;
+      margin-left: 0; }
+    .anketa .anketa.my-input-field, .select-fields .anketa.my-input-field, .range-select .anketa.my-input-field, .anketa .anketa.my-input-field-bigger, .select-fields .anketa.my-input-field-bigger, .range-select .anketa.my-input-field-bigger, .anketa .anketa.range_selecter, .select-fields .anketa.range_selecter, .range-select .anketa.range_selecter, .anketa .select-fields.my-input-field, .select-fields .select-fields.my-input-field, .range-select .select-fields.my-input-field, .anketa .select-fields.my-input-field-bigger, .select-fields .select-fields.my-input-field-bigger, .range-select .select-fields.my-input-field-bigger, .anketa .select-fields.range_selecter, .select-fields .select-fields.range_selecter, .range-select .select-fields.range_selecter, .anketa .email, .select-fields .email, .range-select .email, .anketa .my-full-width-input-field, .select-fields .my-full-width-input-field, .range-select .my-full-width-input-field {
       width: 100%;
       margin-left: 0; }
 nav {
@@ -257,29 +269,29 @@ nav {
       color: #fff;
       display: block;
       padding: 0 15px; }
-  nav .my-input-field, nav .email {
+  nav .my-input-field, nav .my-input-field-bigger, nav .email, nav .my-full-width-input-field {
     margin: 0; }
-    nav .my-input-field input, nav .email input {
+    nav .my-input-field input, nav .my-input-field-bigger input, nav .email input, nav .my-full-width-input-field input {
       height: 100%;
       font-size: 1.2rem;
       border: none;
       padding-left: 2rem; }
-      nav .my-input-field input:focus, nav .email input:focus, nav .my-input-field input[type=text]:valid, nav .email input[type=text]:valid, nav .my-input-field input[type=password]:valid, nav .email input[type=password]:valid, nav .my-input-field input[type=email]:valid, nav .email input[type=email]:valid, nav .my-input-field input[type=url]:valid, nav .email input[type=url]:valid, nav .my-input-field input[type=date]:valid, nav .email input[type=date]:valid {
+      nav .my-input-field input:focus, nav .my-input-field-bigger input:focus, nav .email input:focus, nav .my-full-width-input-field input:focus, nav .my-input-field input[type=text]:valid, nav .my-input-field-bigger input[type=text]:valid, nav .email input[type=text]:valid, nav .my-full-width-input-field input[type=text]:valid, nav .my-input-field input[type=password]:valid, nav .my-input-field-bigger input[type=password]:valid, nav .email input[type=password]:valid, nav .my-full-width-input-field input[type=password]:valid, nav .my-input-field input[type=email]:valid, nav .my-input-field-bigger input[type=email]:valid, nav .email input[type=email]:valid, nav .my-full-width-input-field input[type=email]:valid, nav .my-input-field input[type=url]:valid, nav .my-input-field-bigger input[type=url]:valid, nav .email input[type=url]:valid, nav .my-full-width-input-field input[type=url]:valid, nav .my-input-field input[type=date]:valid, nav .my-input-field-bigger input[type=date]:valid, nav .email input[type=date]:valid, nav .my-full-width-input-field input[type=date]:valid {
         border: none;
         box-shadow: none; }
-    nav .my-input-field label, nav .email label {
+    nav .my-input-field label, nav .my-input-field-bigger label, nav .email label, nav .my-full-width-input-field label {
       top: 0;
       left: 0; }
-      nav .my-input-field label i, nav .email label i {
+      nav .my-input-field label i, nav .my-input-field-bigger label i, nav .email label i, nav .my-full-width-input-field label i {
         color: rgba(255, 255, 255, 0.7);
         -webkit-transition: color 0.3s;
         -moz-transition: color 0.3s;
         -o-transition: color 0.3s;
         -ms-transition: color 0.3s;
         transition: color 0.3s; }
-      nav .my-input-field label.active i, nav .email label.active i {
+      nav .my-input-field label.active i, nav .my-input-field-bigger label.active i, nav .email label.active i, nav .my-full-width-input-field label.active i {
         color: #fff; }
-      nav .my-input-field label.active, nav .email label.active {
+      nav .my-input-field label.active, nav .my-input-field-bigger label.active, nav .email label.active, nav .my-full-width-input-field label.active {
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -587,10 +599,10 @@ input[type=search] {
     opacity: 0;
     transition: .2s opacity ease-out, .2s color ease-out; }
 
-.my-input-field, .email {
+.my-input-field, .my-input-field-bigger, .email, .my-full-width-input-field {
   position: relative;
   margin-top: 1rem; }
-  .my-input-field label, .email label {
+  .my-input-field label, .my-input-field-bigger label, .email label, .my-full-width-input-field label {
     color: #9e9e9e;
     position: absolute;
     top: 0.8rem;
@@ -602,28 +614,28 @@ input[type=search] {
     -o-transition: 0.2s ease-out;
     -ms-transition: 0.2s ease-out;
     transition: 0.2s ease-out; }
-  .my-input-field label.active, .email label.active {
+  .my-input-field label.active, .my-input-field-bigger label.active, .email label.active, .my-full-width-input-field label.active {
     font-size: 0.8rem;
     -webkit-transform: translateY(-140%);
     -moz-transform: translateY(-140%);
     -ms-transform: translateY(-140%);
     -o-transform: translateY(-140%);
     transform: translateY(-140%); }
-.my-input-field input[type=search], .email input[type=search] {
+.my-input-field input[type=search], .my-input-field-bigger input[type=search], .email input[type=search], .my-full-width-input-field input[type=search] {
   display: block;
   line-height: inherit;
   padding-left: 4rem;
   width: calc(100% - 4rem); }
-  .my-input-field input[type=search]:focus, .email input[type=search]:focus {
+  .my-input-field input[type=search]:focus, .my-input-field-bigger input[type=search]:focus, .email input[type=search]:focus, .my-full-width-input-field input[type=search]:focus {
     background-color: #fff;
     border: 0;
     box-shadow: none;
     color: #444; }
-    .my-input-field input[type=search]:focus + label i, .email input[type=search]:focus + label i, .my-input-field input[type=search]:focus ~ i.mdi-close, .email input[type=search]:focus ~ i.mdi-close {
+    .my-input-field input[type=search]:focus + label i, .my-input-field-bigger input[type=search]:focus + label i, .email input[type=search]:focus + label i, .my-full-width-input-field input[type=search]:focus + label i, .my-input-field input[type=search]:focus ~ i.mdi-close, .my-input-field-bigger input[type=search]:focus ~ i.mdi-close, .email input[type=search]:focus ~ i.mdi-close, .my-full-width-input-field input[type=search]:focus ~ i.mdi-close {
       color: #444; }
-  .my-input-field input[type=search] + label, .email input[type=search] + label {
+  .my-input-field input[type=search] + label, .my-input-field-bigger input[type=search] + label, .email input[type=search] + label, .my-full-width-input-field input[type=search] + label {
     left: 1rem; }
-  .my-input-field input[type=search] ~ i.mdi-close, .email input[type=search] ~ i.mdi-close {
+  .my-input-field input[type=search] ~ i.mdi-close, .my-input-field-bigger input[type=search] ~ i.mdi-close, .email input[type=search] ~ i.mdi-close, .my-full-width-input-field input[type=search] ~ i.mdi-close {
     position: absolute;
     top: 0;
     right: 1rem;
@@ -898,7 +910,8 @@ select:disabled {
   color: rgba(0, 0, 0, 0.3); }
 
 .select-dropdown li.disabled,
-.select-dropdown li.disabled > span {
+.select-dropdown li.disabled > span,
+.select-dropdown li.optgroup {
   color: rgba(0, 0, 0, 0.3);
   background-color: transparent; }
 
@@ -923,6 +936,9 @@ select:disabled {
 /***************
       Range
 ***************/
+.range_selecter {
+  position: relative; }
+
 input[type=range] {
   cursor: pointer; }
 

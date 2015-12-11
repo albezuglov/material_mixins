@@ -1,13 +1,20 @@
 @import "localcomp/settings";
 @import "localcomp/utils";
 
-.row { @extend %row; }
-.anketa { @extend %col; @extend %s12; }
+.anketa, .select-fields { @extend %row; @extend %s12; }
 
-.my-input-field, .email { @extend %input-field; @extend %col; }
+.my-input-field, .my-input-field-bigger, .email, .my-full-width-input-field { @extend %input-field; @extend %col; }
 .my-input-field { @extend %s4 ;}
 .email { @extend %s12 ;}
+.my-input-field-bigger { @extend %s6 ;}
+.my-full-width-input-field { @extend %s12; }
 
 .my-nav-wrapper { @extend %nav-wrapper; }
 i.mdi-search { @extend %mdi-action-search; }
 i.mdi-close { @extend %mdi-navigation-close; }
+
+.option1, .option2 { @extend %circle; }
+.option2 { @extend %right; }
+
+.range-select { @extend %row; }
+.range_selecter { @extend %range-field; @extend %col; @extend %s6; }

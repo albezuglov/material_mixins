@@ -25,9 +25,7 @@
 
 
 
-
     <form class="anketa">
-      <div class="row">
         <div class="my-input-field">
           <input placeholder="Placeholder" id="first_name" type="text" class="validate">
           <label for="first_name">First Name</label>
@@ -45,25 +43,18 @@
           </select>
           <label>Materialize Select</label>
         </div>
-      </div>
-      <div class="row">
         <div class="my-input-field">
           <input disabled value="I am not editable" id="disabled" type="text" class="validate">
           <label for="disabled">Disabled</label>
         </div>
-      </div>
-      <div class="row">
         <div class="my-input-field">
           <input id="password" type="password" class="validate">
           <label for="password">Password</label>
         </div>
-      </div>
-      <div class="row">
         <div class="email">
           <input id="email" type="email" class="validate">
           <label for="email">Email</label>
         </div>
-      </div>
     </form>
 
   <nav>
@@ -81,8 +72,8 @@
   <br>
 
   <!-- materialize select multiple -->
-  <div class="row">
-    <div class="input-field col s6">
+  <div class="select-fields">
+    <div class="my-input-field-bigger">
       <select multiple>
         <option value="" disabled selected>Choose your option</option>
         <option value="1">Option 1</option>
@@ -94,7 +85,7 @@
 
 
     <!-- second materialize select multiple -->
-    <div class="input-field col s6">
+    <div class="my-input-field-bigger">
       <select multiple>
         <option value="" disabled >Choose your option</option>
         <option value="1" selected>Option 1</option>
@@ -107,8 +98,8 @@
 
 
   <!-- select with optgroups -->
-  <div class="row">
-    <div class="input-field col s6">
+    <div class="select-fields">
+    <div class="my-input-field-bigger">
       <select>
         <optgroup label="team 1">
           <option value="1">Option 1</option>
@@ -127,7 +118,7 @@
     </div>
 
     <!-- select with optgroups -->
-    <div class="input-field col s6">
+    <div class="my-input-field-bigger">
       <select>
         <optgroup label="team 1">
           <option value="1">Option 1</option>
@@ -147,8 +138,8 @@
   </div>
 
   <!-- select with overflow -->
-  <div class="row">
-    <div class="input-field col s6">
+    <div class="select-fields">
+    <div class="my-input-field-bigger">
       <select>
         <option value="" disabled >Choose your option</option>
         <option value="1">Option 1</option>
@@ -165,26 +156,26 @@
     </div>
   </div>
 
-  <div class="row">
+    <div class="select-fields">
     <h2>Select Icons</h2>
-    <div class="input-field col s12">
+    <div class="my-full-width-input-field">
       <select multiple>
         <option value="" disabled selected>Choose your option</option>
-        <option value="1" data-icon="http://placehold.it/50x50" class="circle">Option 1</option>
-        <option value="2" data-icon="http://placehold.it/50x50" class="circle right">Option 2</option>
+        <option value="1" data-icon="http://placehold.it/50x50" class="option1">Option 1</option>
+        <option value="2" data-icon="http://placehold.it/50x50" class="option2">Option 2</option>
         <option value="3">Option 3</option>
       </select>
       <label>Materialize Select Multiple</label>
     </div>
 
-    <div class="input-field col s12">
+    <div class="my-full-width-input-field">
       <select>
         <optgroup label="team 1">
-          <option value="1" data-icon="http://placehold.it/50x50" class="circle">Option 1</option>
+          <option value="1" data-icon="http://placehold.it/50x50" class="option1">Option 1</option>
           <option value="2">Option 2</option>
         </optgroup>
         <optgroup label="team 2">
-          <option value="3" data-icon="http://placehold.it/50x50" class="circle right">Option 3</option>
+          <option value="3" data-icon="http://placehold.it/50x50" class="option2">Option 3</option>
           <option value="4" selected>Option 4</option>
         </optgroup>
         <optgroup label="team 3">
@@ -197,8 +188,8 @@
   </div>
 
 
-  <form action="#" class="row">
-    <p class="range-field col s6">
+  <form action="#" class="range-select">
+    <p class="range_selecter">
       <input type="range" id="test5" min="0" max="100" />
     </p>
   </form>
