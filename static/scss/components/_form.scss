@@ -923,5 +923,6 @@ select {
 .caret { @extend  %caret; }
 .select-dropdown { @extend %select-dropdown; }
 .dropdown-content { @extend %dropdown-content; }
+.range-field { @extend %range-field; }
 .thumb { @extend %thumb; }
 .value { @extend %value; }

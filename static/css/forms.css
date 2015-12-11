@@ -936,7 +936,7 @@ select:disabled {
 /***************
       Range
 ***************/
-.range_selecter {
+.range-field {
   position: relative; }
 
 input[type=range], input[type=range] + .thumb {
