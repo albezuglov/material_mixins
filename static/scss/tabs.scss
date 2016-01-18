@@ -1,2 +1,10 @@
 @import "localcomp/settings";
 @import "localcomp/utils";
+
+
+.tabtest { @extend %col; }
+.tabgroup { @extend %row; @extend %s12; @extend %no-padding; }
+
+// Classnames .tabs and .tab need to properly working indicator ( underlined tabs )
+.tabs { @extend %tabs;}
+.tab { @extend %tab;}
