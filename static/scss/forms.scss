@@ -18,3 +18,5 @@ i.mdi-close { @extend %mdi-navigation-close; }
 
 .range_select { @extend %row; }
 .range_selecter { @extend %col; @extend %s6; }
+
+.phoneicon { @extend %material-icons; @extend %prefix; }
