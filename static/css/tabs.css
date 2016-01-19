@@ -201,6 +201,11 @@ input[type=range], input[type=range] + .thumb {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 /* Start Icons */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://fonts.gstatic.com/s/materialicons/v11/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format("woff2"); }
 .tabgroup {
   margin-left: auto;
   margin-right: auto;

@@ -35,7 +35,7 @@ blockquote {
 i {
   line-height: inherit; }
   i.card_large {
-    font-size: 6rem; }
+    font-size: 6rem !important; }
 
 /*********************
   Transition Classes
@@ -201,6 +201,11 @@ input[type=range], input[type=range] + .thumb {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 /* Start Icons */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://fonts.gstatic.com/s/materialicons/v11/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format("woff2"); }
 .mbox_row {
   margin-left: auto;
   margin-right: auto;

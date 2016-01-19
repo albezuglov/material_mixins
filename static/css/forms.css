@@ -37,6 +37,8 @@ i {
   i.option2 {
     float: right;
     margin-left: 15px; }
+  .email i {
+    font-size: 2rem !important; }
 /*********************
   Transition Classes
 **********************/
@@ -212,6 +214,26 @@ i.mdi-search:before {
 
 i.mdi-close:before {
   content: "\e8aa"; }
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://fonts.gstatic.com/s/materialicons/v11/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format("woff2"); }
+.email i {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale; }
 
 .anketa, .select-fields, .range_select {
   margin-left: auto;
@@ -621,7 +643,7 @@ input[type=search] {
     -ms-transform: translateY(-140%);
     -o-transform: translateY(-140%);
     transform: translateY(-140%); }
-  .my-input-field .phoneicon, .my-input-field-bigger .phoneicon, .email .phoneicon, .my-full-width-input-field .phoneicon {
+  .email i {
     position: absolute;
     width: 3rem;
     font-size: 2rem;
@@ -630,26 +652,26 @@ input[type=search] {
     -o-transition: color 0.2s;
     -ms-transition: color 0.2s;
     transition: color 0.2s; }
-    .my-input-field .active.phoneicon, .my-input-field-bigger .active.phoneicon, .email .active.phoneicon, .my-full-width-input-field .active.phoneicon {
+    .email i.active {
       color: #26a69a; }
-  .my-input-field .phoneicon ~ input, .my-input-field-bigger .phoneicon ~ input, .email .phoneicon ~ input, .my-full-width-input-field .phoneicon ~ input,
-  .my-input-field .phoneicon ~ textarea,
-  .my-input-field-bigger .phoneicon ~ textarea,
-  .email .phoneicon ~ textarea,
-  .my-full-width-input-field .phoneicon ~ textarea {
+  .email .my-input-field i ~ input, .email .my-input-field-bigger i ~ input, .email i ~ input, .email .my-full-width-input-field i ~ input,
+  .email .my-input-field i ~ textarea,
+  .email .my-input-field-bigger i ~ textarea,
+  .email i ~ textarea,
+  .email .my-full-width-input-field i ~ textarea {
     margin-left: 3rem;
     width: 92%;
     width: calc(100% - 3rem); }
-  .my-input-field .phoneicon ~ textarea, .my-input-field-bigger .phoneicon ~ textarea, .email .phoneicon ~ textarea, .my-full-width-input-field .phoneicon ~ textarea {
+  .email .my-input-field i ~ textarea, .email .my-input-field-bigger i ~ textarea, .email i ~ textarea, .email .my-full-width-input-field i ~ textarea {
     padding-top: .8rem; }
-  .my-input-field .phoneicon ~ label, .my-input-field-bigger .phoneicon ~ label, .email .phoneicon ~ label, .my-full-width-input-field .phoneicon ~ label {
+  .email .my-input-field i ~ label, .email .my-input-field-bigger i ~ label, .email i ~ label, .email .my-full-width-input-field i ~ label {
     margin-left: 3rem; }
   @media only screen and (max-width: 992px) {
-    .my-input-field .phoneicon ~ input, .my-input-field-bigger .phoneicon ~ input, .email .phoneicon ~ input, .my-full-width-input-field .phoneicon ~ input {
+    .email .my-input-field i ~ input, .email .my-input-field-bigger i ~ input, .email i ~ input, .email .my-full-width-input-field i ~ input {
       width: 86%;
       width: calc(100% - 3rem); } }
   @media only screen and (max-width: 600px) {
-    .my-input-field .phoneicon ~ input, .my-input-field-bigger .phoneicon ~ input, .email .phoneicon ~ input, .my-full-width-input-field .phoneicon ~ input {
+    .email .my-input-field i ~ input, .email .my-input-field-bigger i ~ input, .email i ~ input, .email .my-full-width-input-field i ~ input {
       width: 80%;
       width: calc(100% - 3rem); } }
 
@@ -663,11 +685,11 @@ input[type=search] {
     border: 0;
     box-shadow: none;
     color: #444; }
-    .my-input-field input[type=search]:focus + label i, .my-input-field-bigger input[type=search]:focus + label i, .email input[type=search]:focus + label i, .my-full-width-input-field input[type=search]:focus + label i, .my-input-field input[type=search]:focus ~ i.mdi-close, .my-input-field-bigger input[type=search]:focus ~ i.mdi-close, .email input[type=search]:focus ~ i.mdi-close, .my-full-width-input-field input[type=search]:focus ~ i.mdi-close, .my-input-field input[type=search]:focus ~ .phoneicon, .my-input-field-bigger input[type=search]:focus ~ .phoneicon, .email input[type=search]:focus ~ .phoneicon, .my-full-width-input-field input[type=search]:focus ~ .phoneicon {
+    .my-input-field input[type=search]:focus + label i, .my-input-field-bigger input[type=search]:focus + label i, .email input[type=search]:focus + label i, .my-full-width-input-field input[type=search]:focus + label i, .my-input-field input[type=search]:focus ~ i.mdi-close, .my-input-field-bigger input[type=search]:focus ~ i.mdi-close, .email input[type=search]:focus ~ i.mdi-close, .my-full-width-input-field input[type=search]:focus ~ i.mdi-close, .email .my-input-field input[type=search]:focus ~ i, .email .my-input-field-bigger input[type=search]:focus ~ i, .email input[type=search]:focus ~ i, .email .my-full-width-input-field input[type=search]:focus ~ i {
       color: #444; }
   .my-input-field input[type=search] + label, .my-input-field-bigger input[type=search] + label, .email input[type=search] + label, .my-full-width-input-field input[type=search] + label {
     left: 1rem; }
-  .my-input-field input[type=search] ~ i.mdi-close, .my-input-field-bigger input[type=search] ~ i.mdi-close, .email input[type=search] ~ i.mdi-close, .my-full-width-input-field input[type=search] ~ i.mdi-close, .my-input-field input[type=search] ~ .phoneicon, .my-input-field-bigger input[type=search] ~ .phoneicon, .email input[type=search] ~ .phoneicon, .my-full-width-input-field input[type=search] ~ .phoneicon {
+  .my-input-field input[type=search] ~ i.mdi-close, .my-input-field-bigger input[type=search] ~ i.mdi-close, .email input[type=search] ~ i.mdi-close, .my-full-width-input-field input[type=search] ~ i.mdi-close, .email .my-input-field input[type=search] ~ i, .email .my-input-field-bigger input[type=search] ~ i, .email input[type=search] ~ i, .email .my-full-width-input-field input[type=search] ~ i {
     position: absolute;
     top: 0;
     right: 1rem;
@@ -1461,5 +1483,7 @@ select {
 /**
  * The picker box.
  */
+.email i:before {
+  content: "email"; }
 
 /*# sourceMappingURL=forms.css.map */

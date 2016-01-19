@@ -17,6 +17,7 @@ $tabs-underline-color: color("materialize-red", "lighten-2");
 // components
 @import "../components/global";
 @import "../components/icons-material-design";
+@import "../components/materialicons";
 @import "../components/grid";
 @import "../components/navbar";
 @import "../components/roboto";
@@ -40,3 +41,4 @@ $tabs-underline-color: color("materialize-red", "lighten-2");
 @import "../components/date_picker/default.scss";
 @import "../components/date_picker/default.date.scss";
 @import "../components/date_picker/default.time.scss";
+

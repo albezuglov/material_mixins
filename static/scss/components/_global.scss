@@ -113,16 +113,16 @@ i {
     margin-left: 15px;
   }
   &%tiny {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   &%small {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   &%medium {
-    font-size: 4rem;
+    font-size: 4rem !important;
   }
   &%large {
-    font-size: 6rem;
+    font-size: 6rem !important;
   }
 }
 

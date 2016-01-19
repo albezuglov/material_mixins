@@ -9,6 +9,9 @@
 .my-input-field-bigger { @extend %s6 ;}
 .my-full-width-input-field { @extend %s12; }
 
+.email i { @extend %material-icons; @extend %prefix; @extend %small; }
+.email i:before { content: "email"; }
+
 .my-nav-wrapper { @extend %nav-wrapper; }
 i.mdi-search { @extend %mdi-action-search; }
 i.mdi-close { @extend %mdi-navigation-close; }
@@ -19,4 +22,4 @@ i.mdi-close { @extend %mdi-navigation-close; }
 .range_select { @extend %row; }
 .range_selecter { @extend %col; @extend %s6; }
 
-.phoneicon { @extend %material-icons; @extend %prefix; }
+
